@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sugestão de Presente | 15 Anos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --verde: #5a7f71;
+  --verde-claro: #8fb5a7;
+  --dourado: #d4af7a;
+  --fundo: #f6f2ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fundo);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* VIDEO TOPO */
+.topo-video {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.topo-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topo-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(246,242,237,1));
+}
+
+/* TITULO */
+.titulo {
+  text-align: center;
+  margin: 60px 20px 30px;
+}
+
+.titulo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--verde);
+}
+
+.titulo p {
+  margin-top: 10px;
+  font-size: 1rem;
+  opacity: .8;
+}
+
+/* GRID PRESENTES */
+.presentes {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  transition: transform .4s, box-shadow .4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.12);
+}
+
+/* BORDA IMAGEM */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid rgba(6, 34, 0, 0.795);
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--verde);
+  font-size: 1.3rem;
+}
+
+.card span {
+  display: block;
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* BOTAO */
+.card button {
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: linear-gradient(135deg, var(--verde), var(--verde-claro));
+  color: #fff;
+  transition: all .4s;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, var(--dourado), #e6c79c);
+  color: #3b3b3b;
+  transform: scale(1.05);
+}
+
+/* RODAPE */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: .9rem;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<section class="topo-video">
+  <video autoplay muted loop>
+    <!-- TROQUE AQUI O VIDEO -->
+    <source src="video-princesa-e-o-sapo.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- TITULO -->
+<div class="titulo">
+  <h1>Sugestões de Presente</h1>
+  <p>Com carinho, para celebrar meus 15 anos ✨</p>
+</div>
+
+<!-- PRESENTES -->
+<section class="presentes">
+
+  <!-- PRESENTE 1 -->
+  <div class="card">
+    <img src="pantufa.png" alt="Pantufa">
+    <h2>Pantufa</h2>
+    <span>R$ 78,90</span>
+    <button onclick="pix(78.90)">Presentear</button>
+  </div>
+
+  <!-- PRESENTE 2 -->
+  <div class="card">
+    <img src="vestido.png" alt="Vestido">
+    <h2>Vestido</h2>
+    <span>R$ 120,00</span>
+    <button onclick="pix(120)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="regata.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 49,99</span>
+    <button onclick="pix(49.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="44.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 39,99</span>
+    <button onclick="pix(39.99)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="aurora.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 120,00</span>
+    <button onclick="pix(120)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="blu.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 48,90</span>
+    <button onclick="pix(48.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="calça.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 120,00</span>
+    <button onclick="pix(120)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="Crooped.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 48,90</span>
+    <button onclick="pix(48.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="re.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 48,90</span>
+    <button onclick="pix(48.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="rom.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 52,00</span>
+    <button onclick="pix(52)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="segl.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 28,00</span>
+    <button onclick="pix(28)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="soleia.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 45,90</span>
+    <button onclick="pix(45.90)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="tenis1.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 120,00</span>
+    <button onclick="pix(120)">Presentear</button>
+  </div>
+
+  <div class="card">
+    <img src="vintage.png" alt="Vestido">
+    <h2>Regata</h2>
+    <span>R$ 102,00</span>
+    <button onclick="pix(102)">Presentear</button>
+  </div>
+
+</section>
+
+<footer>
+  Obrigada por fazer parte desse momento tão especial 💚
+</footer>
+
+<script>
+const pixPorValor = {
+  78.90:  "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540578.905802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E240974B8D044481594630456BB",
+  49.99:  "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540549.995802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E2427AAD9B49561111863041AC8",
+  39.99:  "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540539.995802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E2447A892938099257763045EC5",
+  120: "00020126560014br.gov.bcb.pix0114+55199991755910216Presente 15 anos5204000053039865406120.005802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E1F54AAB7C0776815636304488B",
+  52: "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540552.005802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E24B11A7AE6015816696304B102",
+  28: "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540528.005802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E24C93F44A52377709663048F1D",
+  45.90: "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540545.905802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E24DBC98325218067876304CCC2",
+  102: "00020126360014br.gov.bcb.pix0114+55199991755915204000053039865406102.005802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E24EF1867E5890896166304C566",
+  48.90: "00020126360014br.gov.bcb.pix0114+5519999175591520400005303986540548.905802BR5925ANA CECILIA MOREIRA DA SI6009Sao Paulo62290525REC697E2504781873724152096304358A"
+};
+
+function pix(valor) {
+  const codigoPix = pixPorValor[valor];
+
+  if (!codigoPix) {
+    alert("Valor indisponível no momento 💚");
+    return;
+  }
+
+  navigator.clipboard.writeText(codigoPix).then(() => {
+    alert(
+      "PIX copiado com sucesso ✨\n\n" +
+      "Abra seu banco, vá em PIX > Copia e Cola e confirme o presente 💚"
+    );
+  });
+}
+</script>
+
+
+</body>
+</html>
